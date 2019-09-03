@@ -12,6 +12,15 @@ $(document).ready(function(){
         $("div.house1").toggle();
       });
 
+      $("div.office1").click(function() {
+        $("div.office2").toggle();
+        $("div.office1").toggle();
+      });
+      $("div.office2").click(function() {
+        $("div.office2").toggle();
+        $("div.office1").toggle();
+      });
+
 
     
 })

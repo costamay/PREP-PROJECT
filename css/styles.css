@@ -1,18 +1,18 @@
 #arthur{
-    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(../images/slide-13.jpg);
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(../images/residential-moving-1.jpg);
     background-size: cover;
     background-position: center;
     color: #fff !important;
-    height: 700px;
+    height: 500px;
 }
 .services{
-    margin: 90px auto;
+    margin: 90px;
     text-align: center;
 }
 .services h1{
     font-family: sans-serif;
     letter-spacing: 1px;
-    margin: 50px;
+    margin: 70px;
 }
 .services h1:after{
     content: '';
@@ -47,3 +47,4 @@
 .pet2{
     display: none;
 }
+

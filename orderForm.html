@@ -12,13 +12,15 @@
 <body>
     <div class="container">
         <div class="form-details">
-        <h2 class="quotation">Fill in the form below to request for a quotation:</h2>
+        <h2 class="quotation">Request A Quotation:</h2>
             <form>
-                <div class="section-form">
+                <div class="section-form" >
                     <div class="row">
-                        <div class="col-md-3">
+                        <div class="col-md-4">
                             <div class="form-column">
-                                <select name="Services Offered">
+                                <div class="header1">Select Type of Service</div>
+                                <select name="menu-55" value size="1" class="form-control">
+                                    <option value="Select Service">Select Service</option>
                                     <option value="house-moving">House Moving</option>
                                     <option value="Office Moving">Office Moving</option>
                                     <option value="Pet Reloctations">Pet Relocation</option>
@@ -26,13 +28,28 @@
                             </div>
                         </div>
                     </div>
+                    <br>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="form-column">
+                                    <div class="header1">Select Type of Vehicle</div>
+                                    <select name="menu-55" id="vehicle" value size="1" class="form-control">
+                                        <option value="Select Vehicle">Select Vehicle</option>
+                                        <option value="PickupTruck">Pickup Truck</option>
+                                        <option value="medium-truck">Medium Size Truck</option>
+                                        <option value="large-truck">Large Trcuk</option>
+                                    </select>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
                     <div class="row text-center">
-                        <div class="col-md-3">
+                        <div class="col-md-4">
                             <div class="form-column">
                                 <input type="text" name="first-name" id="first-name" value size="40" class="form-control" placeholder="First Name">
                             </div>        
                         </div>
-                        <div class="col-md=3">
+                        <div class="col-md=4">
                             <div class="form-column">
                                 <input type="text" name="second-name" id="second-name" value size="40" class="form-control" placeholder="Second Name">
                             </div>
@@ -40,16 +57,14 @@
                     </div>
                     <br>
                     <div class="row">
-                        <div class="col-md-3">
+                        <div class="col-md-4">
                             <div class="form-column">
                                 <input type="text" name="email" id="email" value size="40" class="form-control" placeholder="Email">
                             </div>
                         </div>
                     </div>
-                    <div class="row"> 
-
-                    </div>
-                </div>
+                    <br>
+                    
             </form>
         </div>
     </div>

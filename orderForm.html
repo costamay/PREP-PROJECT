@@ -11,30 +11,47 @@
 </head>
 <body>
     <div class="container">
-        <form>
-            <div class="section-form">
-                <div class="row">
-                    <div class="col-md-3 text-center">
-                        <div class="form-column">
-                            <input type="text" name="first-name" id="first-name" value size="40" class="form-control" placeholder="First Name">
-                        </div>        
-                    </div>
-                    <div class="col-md=3">
-                        <div class="form-column">
-                            <input type="text" name="second-name" id="second-name" value size="40" class="form-control" placeholder="Second Name">
+        <div class="form-details">
+        <h2 class="quotation">Fill in the form below to request for a quotation:</h2>
+            <form>
+                <div class="section-form">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="form-column">
+                                <select name="Services Offered">
+                                    <option value="house-moving">House Moving</option>
+                                    <option value="Office Moving">Office Moving</option>
+                                    <option value="Pet Reloctations">Pet Relocation</option>
+                                </select>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <br>
-                <div class="row">
-                    <div class="col-md-3">
-                        <div class="form-column">
-                            <input type="text" name="email" id="email" value size="40" class="form-control" placeholder="Email">
+                    <div class="row text-center">
+                        <div class="col-md-3">
+                            <div class="form-column">
+                                <input type="text" name="first-name" id="first-name" value size="40" class="form-control" placeholder="First Name">
+                            </div>        
+                        </div>
+                        <div class="col-md=3">
+                            <div class="form-column">
+                                <input type="text" name="second-name" id="second-name" value size="40" class="form-control" placeholder="Second Name">
+                            </div>
                         </div>
                     </div>
+                    <br>
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="form-column">
+                                <input type="text" name="email" id="email" value size="40" class="form-control" placeholder="Email">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row"> 
+
+                    </div>
                 </div>
-            </div>
-        </form>
+            </form>
+        </div>
     </div>
     <script src="js/jquery-3.4.1.js"></script>
     <script src="js/bootstrap.bundle.js"></script>

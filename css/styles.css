@@ -14,3 +14,14 @@
     letter-spacing: 1px;
     margin: 50px;
 }
+.services h1:after{
+    content: '';
+    background: #fff;
+    display: block;
+    width: 150px;
+    margin: 10px auto;
+    height: 3px;
+}
+#row{
+    text-align: center;
+}

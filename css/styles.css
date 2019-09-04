@@ -1,18 +1,15 @@
-#arthur{
+#services{
     background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(../images/residential-moving-1.jpg);
     background-size: cover;
+    width: 100%;
     background-position: center;
     color: #fff !important;
-    height: 500px;
+    
+    min-height: 80vh;
 }
 .services{
     margin: 90px;
     text-align: center;
-}
-.services h1{
-    font-family: sans-serif;
-    letter-spacing: 1px;
-    margin: 70px;
 }
 .services h1:after{
     content: '';
@@ -47,10 +44,6 @@
 .pet2{
     display: none;
 }
-.bg-success{
-    height: 400px;
-    color: #fff;
-}
 .pes{
     margin-top: -25px;
     margin-left: 25px;
@@ -58,4 +51,26 @@
 .pes2{
     margin-top: -25px;
     margin-left: 25px;
+}
+span{
+    color: grey;
+}
+#button{
+    padding: 10px 20px;
+    font-size: 20px;
+    border-radius: 10px;
+}
+.col-md-3{
+    margin-top: 60px;
+}
+#it{
+    font-size: 20px;
+}
+.hamisha{
+     color: black;
+}
+#contact{
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0,0,0,0));
+    color: #fff;
+    height: 500px;
 }

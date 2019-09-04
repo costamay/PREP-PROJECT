@@ -79,5 +79,5 @@ a{
 }
 a:hover{
     color: #fff;
-
+    cursor: pointer;
 }

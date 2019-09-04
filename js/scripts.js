@@ -22,16 +22,17 @@ $(document).ready(function(){
       });
 
       $("div.pet1").click(function() {
-        $("div.pet2").toggle();
-        $("div.pet1").toggle();
+        $("div.pet2").slideToggle(1000);
+        $("div.pet1").slideToggle(1000);
       });
       $("div.pet2").click(function() {
-        $("div.pet2").toggle();
-        $("div.pet1").toggle();
+        $("div.pet2").slideToggle(1000);
+        $("div.pet1").slideToggle(1000);
       });
 
-
-
-
+      $("div.form1").click(function() {
+          $("div.form2").toggle();
+          $("div.form1").toggle();
+      });      
     
-})
+});

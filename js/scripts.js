@@ -30,9 +30,11 @@ $(document).ready(function(){
         $("div.pet1").slideToggle(1000);
       });
 
-      $("div.form1").click(function() {
-          $("div.form2").toggle();
-          $("div.form1").toggle();
-      });      
+      $("form#myForm").submit(function(event) {
+        var email= $("#email").val();
+        alert("Thank you "+email+" for subscribing to Hamisha movers newsletter.Check your inbox for exclusive offers");
+        event.preventDefault();
+      });
+
     
 });

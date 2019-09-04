@@ -1,0 +1,27 @@
+.quotation{
+    font-size: 20px;
+    color: white;
+
+}
+.form-details{
+    text-align: center;
+    background-color: grey;
+    padding: 70px;
+    
+
+}
+.header1{
+    text-align: left;
+    color: white;
+}
+.inputstl{
+background: -moz-linear-gradient(top, #FFFFFF, #C6ECFF 1px, #FFFFFF);
+}
+#map{
+    height: 100%;
+}
+#warnings-panel{
+    width: 100%;
+    height: 10%;
+    text-align: center;
+}

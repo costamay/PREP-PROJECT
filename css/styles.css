@@ -1,0 +1,42 @@
+#about {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: bisque;
+    padding-top: 30px;
+}
+
+#mission {
+    color: black;
+    font-size: 20px;
+    padding-top: 80px;
+}
+
+#are {
+    width: 50%
+}
+
+h2 {
+    text-align: center
+}
+
+.fab {
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    text-decoration: none;
+}
+.fa-facebook{
+    background: #3B5998;
+  color: white;
+}
+.fa-twitter{
+    background: #55ACEE;
+  color: white;
+}
+.fa-google{
+    background: #dd4b39;
+  color: white;
+}
+
+.text{
+    display: none;
+}

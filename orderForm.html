@@ -37,7 +37,7 @@
                                     <option value="Select Vehicle">Select Vehicle</option>
                                     <option value="PickupTruck">Pickup Truck</option>
                                     <option value="medium-truck">Medium Size Truck</option>
-                                    <option value="large-truck">Large Trcuk</option>
+                                    <option value="large-truck">Large Truck</option>
                                 </select>
                             </div>
                         </div>
@@ -75,13 +75,22 @@
                     <div class="row">
                         <div class="col-md-4">
                             <div class="form-column">
-                                <input type="from" name="address" id="address" value size="40" class="form-control" placeholder="From">
+                                <div class="header1" id="floating-panel">Location:From</div>
+                                <select name="menu-55" id="start" value size="1" class="form-control">
+                                    <option value="Bazaar plaza, NBI">Bazaar Plaza</option>
+                                    <option value="Stima Plza, NBI">Stima Plaza</option>
+                                    <option value="Delta towers, NBI">Delta Towers</option>
+                                    <option value="Garden city Mall, NBI">Graden City Mall</option>
+                                </select>     
                             </div>
                         </div>
                         <div class="col-md-4">
                             <div class="form-column">
-                                <input type="to" name="address" id="address" value size="40" class="form-control" placeholder="From">
+                                 
                             </div>
+                            <div id="map"></div>
+                            &nbsp;
+                            <div id="warnings-panel"></div>
                         </div>
                     </div>
                     <br>

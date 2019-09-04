@@ -36,6 +36,7 @@ function calculateAndDisplayRoute(directionsService, directionsDisplay){
 //user interface logic
 $(document).ready(function(){
 
+
     $("div.house1").click(function() {
         $("div.house2").slideToggle(1000);
         $("div.house1").slideToggle(1000);
@@ -68,6 +69,7 @@ $(document).ready(function(){
         alert("Thank you "+email+" for subscribing to Hamisha movers newsletter.Check your inbox for exclusive offers");
         event.preventDefault();
       });
+
 
     
 });

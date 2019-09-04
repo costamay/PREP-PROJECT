@@ -88,7 +88,7 @@ span{
 #contact{
     background: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0,0,0,0));
     color: #fff;
-    height: 500px;
+    min-height: 500px;
 }
 a{
     color: #fff;
@@ -96,6 +96,24 @@ a{
 a:hover{
     color: #fff;
     cursor: pointer;
+
+
+}
+#choose{
+    text-align: center;
+}
+body{
+    font-family: 'Manjari', sans-serif;
+}
+#choose h2{
+    text-align: left;
+    font-family: 'Passion One', cursive;
+    font-size: 50px;
+}
+#choose h5{
+    text-align: left;
+    color: lightgrey;
+
 }
 
 .quotation{

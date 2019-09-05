@@ -25,3 +25,6 @@ background: -moz-linear-gradient(top, #FFFFFF, #C6ECFF 1px, #FFFFFF);
     height: 10%;
     text-align: center;
 }
+#show-details{
+    display: none;
+}

@@ -142,7 +142,8 @@ background: -moz-linear-gradient(top, #FFFFFF, #C6ECFF 1px, #FFFFFF);
     width: 100%;
     height: 10%;
     text-align: center;
-#about {
+}
+#about{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     background-color: bisque;
     padding-top: 30px;

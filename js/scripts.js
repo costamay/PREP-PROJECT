@@ -1,37 +1,42 @@
-function initMap(){
-    var directionsDisplay = new google.maps.DirectionsRenderer
-    var directionsService = new google.map.DirectionsService
-    var map = new google.maps.Map(document.getElementById('map'), {
-        zoom: 7,
-        center: {lat:1.2921, lng:36.8219}
-    })
-    directionsDisplay.setMap(map)
-    directionsDisplay.setPanle(document.getElementById('right-panel'))
-
-    var control = document.getElementById('floatinf-panel')
-    control.style.display = 'block'
-    map.controls[google.maps.ControlPosition.TOP_CENTER].push(control)
-
-    var onChangeHandler = function(){
-        calculateAndDisplayRoute(directionsService, directionsDisplay)
-    }
-    document.getElementById('start').addEventListener('change', onChangeHandler)
-    document.getElementById('end').addEventListener('change', onChangeHandler)
+function Quotation(services, vehicle, firstName, secondName, email, phone){
+    this.services = services
+    this.vehicle = vehicle
+    this.firstName = firstName
+    this.secondName = secondName
+    this.email = email
+    this.phone = phone
 }
-function calculateAndDisplayRoute(directionsService, directionsDisplay){
-    var start = document.getElementById('start').Value()
-    var end = document.getElementById('end').value()
-    directionsService.calculateAndDisplayRoute({
-        origin: start,
-        destination: end,
-        travelMode: 'DRIVING'
-    }, function(response, status){
-        if (status === 'OK'){
-            directionsDisplay.setDirections(response)
-        }else{
-            window.alert('Directions request failed due to' + status)
-        }
+Quotation.prototype.listItems = function(){
+    return this.services + "," + this.vehicle+ "" +this.firstName+ "" +this.secondName+ "" + this.email+ "" +this.phone
+}
+$(function(){
+    
+    $("#button_1").click(function(e){
+        e.preventDefault()
+        var servicesInput = $("#select1 option:selected").value
+        
+        var vehicleInput = $("#select2 option:selected").value
+        
+        var firstNameInput = $("#first-name").value
+        
+        var secondNameInput = $("#second-name").value
+        
+        var emailInput = $("#email").value
+        
+        var phoneInput = $("#phone").value
+    
+        var quotationTwo = new Quotation(servicesInput, vehicleInput, firstNameInput, secondNameInput, emailInput, phoneInput)
+        quotationTwo.listItems()
+        $("#displayService").show()
+        $("#displayVehicle").show(quotationTwo.vehicleInput)
+        $("#displayFirstName").show(quotationTwo.firstNameInput)
+        $("#displaySecondName").show(quotationTwo.secondName)
+        $("#displayEmail").show(quotationTwo.emailInput)
+        $("#displayPhone").show(quotationTwo.phoneInput)          
+ 
     })
+
+
 }
 //user interface logic
 $(document).ready(function(){
@@ -64,4 +69,5 @@ $(document).ready(function(){
       }).mouseleave(function(){
         $("#text5").hide();
       })
+
 })

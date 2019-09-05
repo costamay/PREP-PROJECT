@@ -1,3 +1,4 @@
+
 #about {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     
@@ -35,3 +36,11 @@ h2 {
 .font p{
     font-size: 20px
 }
+@import url('https://fonts.googleapis.com/css?family=Bree+Serif&display=swap');
+#navbar{
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+}
+h1{
+    font-family: 'Bree Serif', serif;
+}
+

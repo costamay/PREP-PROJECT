@@ -1,4 +1,121 @@
 
+.carousel-caption{
+    text-align: center;
+    font-family: sans-serif;
+    position: absolute;
+}
+.carousel-item img{
+    display: block;
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100vh;
+    margin: 20px auto;
+}
+
+
+#services{
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(../images/residential-moving-1.jpg);
+    background-size: cover;
+    width: 100%;
+    background-position: center;
+    color: #fff !important;
+    
+    min-height: 80vh;
+}
+.services{
+    margin: 90px;
+    text-align: center;
+}
+.services h1:after{
+    content: '';
+    background: #fff;
+    display: block;
+    width: 150px;
+    margin: 10px auto;
+    height: 3px;
+}
+#row{
+    text-align: center;
+}
+.icon{
+    font-size: 40px;
+    margin: 20px auto;
+    padding: 20px;
+    height: 80px;
+    width: 80px;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+.col-md-4:hover{
+    box-shadow: 5px 7px 9px -3px rgba(255,255,255,0.5);
+    cursor: pointer;
+}
+.house2{
+    display: none;
+}
+.office2{
+    display: none;
+}
+.pet2{
+    display: none;
+}
+.pes{
+    margin-top: -25px;
+    margin-left: 25px;
+}
+.pes2{
+    margin-top: -25px;
+    margin-left: 25px;
+}
+span{
+    color: grey;
+}
+#button{
+    padding: 10px 20px;
+    font-size: 20px;
+    border-radius: 10px;
+}
+.col-md-3{
+    margin-top: 60px;
+}
+#it{
+    font-size: 20px;
+}
+.hamisha{
+     color: black;
+}
+#contact{
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0,0,0,0));
+    color: #fff;
+    min-height: 500px;
+}
+a{
+    color: #fff;
+}
+a:hover{
+    color: #fff;
+    cursor: pointer;
+
+
+}
+#choose{
+    text-align: center;
+}
+body{
+    font-family: 'Manjari', sans-serif;
+}
+#choose h2{
+    text-align: left;
+    font-family: 'Passion One', cursive;
+    font-size: 50px;
+}
+#choose h5{
+    text-align: left;
+    color: lightgrey;
+
+}
+
 .quotation{
     font-size: 20px;
     color: white;
@@ -26,21 +143,27 @@ background: -moz-linear-gradient(top, #FFFFFF, #C6ECFF 1px, #FFFFFF);
     height: 10%;
     text-align: center;
 
+
 }
 #show-details{
     display: none;
+}
+#about{
 
-#about {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    background-color: bisque;
-    padding-top: 30px;
+    
+    
+}
+.part-1{
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../images/back4.jpg")center/ cover no-repeat fixed;
+    /* background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.4;
+    height: 100%;
+    width: 100%; */
 }
 
-#mission {
-    color: black;
-    font-size: 20px;
-    padding-top: 80px;
-}
+
 
 #are {
     width: 50%
@@ -50,27 +173,18 @@ h2 {
     text-align: center
 }
 
-.fab {
-    padding: 20px;
-    font-size: 30px;
-    text-align: center;
-    text-decoration: none;
-}
-.fa-facebook{
-    background: #3B5998;
-  color: white;
-}
-.fa-twitter{
-    background: #55ACEE;
-  color: white;
-}
-.fa-google{
-    background: #dd4b39;
-  color: white;
-}
 
 .text{
     display: none;
+}
+.underline{
+    width: 200px;
+    height: 10px;
+    background-color: gold;
+    margin: 0 auto;
+}
+.font p{
+    font-size: 20px
 }
 @import url('https://fonts.googleapis.com/css?family=Bree+Serif&display=swap');
 #navbar{
@@ -79,4 +193,6 @@ h2 {
 h1{
     font-family: 'Bree Serif', serif;
 
+
 }
+

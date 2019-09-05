@@ -10,10 +10,10 @@ function Quotation(services, vehicle, firstName, secondName, email, phone){
 Quotation.prototype.listItems = function(){
     return this.services + "," + this.vehicle+ "" +this.firstName+ "" +this.secondName+ "" + this.email+ "" +this.phone
 }
-$(function(){
-    
-    $("#button_1").click(function(e){
-        e.preventDefault()
+
+$(document).ready(function(){
+    $("form#codec1").submit(function(event){
+        event.preventDefault();
         var servicesInput = $("#select1 option:selected").value
         
         var vehicleInput = $("#select2 option:selected").value
@@ -26,19 +26,21 @@ $(function(){
         
         var phoneInput = $("#phone").value
     
-        var quotationTwo = new Quotation(servicesInput, vehicleInput, firstNameInput, secondNameInput, emailInput, phoneInput)
-        quotationTwo.listItems()
-        $("#displayService").show()
-        $("#displayVehicle").show(quotationTwo.vehicleInput)
-        $("#displayFirstName").show(quotationTwo.firstNameInput)
-        $("#displaySecondName").show(quotationTwo.secondName)
-        $("#displayEmail").show(quotationTwo.emailInput)
-        $("#displayPhone").show(quotationTwo.phoneInput)          
- 
+        var newQuotation = new Quotation(servicesInput, vehicleInput, firstNameInput, secondNameInput, emailInput, phoneInput)
+        
+            $("#displayService").show()
+            $("#displayService").show()
+            $("#displayVehicle").show()
+            $("#displayFirstName").show()
+            $("#displaySecondName").show()
+            $("#displayEmail").show()
+            $("#displayPhone").show() 
+  
+           
+     
     })
 
-
-}
+})
 
 //user interface logic
 $(document).ready(function(){

@@ -187,6 +187,7 @@ background: -moz-linear-gradient(top, #FFFFFF, #C6ECFF 1px, #FFFFFF);
 }
 #map{
     height: 100%;
+    width: 100%;
 }
 #warnings-panel{
     width: 100%;
@@ -199,6 +200,7 @@ background: -moz-linear-gradient(top, #FFFFFF, #C6ECFF 1px, #FFFFFF);
     display: none;
 }
 #about{
+
 
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     
@@ -242,7 +244,4 @@ h2 {
 }
 h1{
     font-family: 'Bree Serif', serif;
-
-
-}
 

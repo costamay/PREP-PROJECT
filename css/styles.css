@@ -20,6 +20,7 @@ background: -moz-linear-gradient(top, #FFFFFF, #C6ECFF 1px, #FFFFFF);
 }
 #map{
     height: 100%;
+    width: 100%;
 }
 #warnings-panel{
     width: 100%;
@@ -29,7 +30,7 @@ background: -moz-linear-gradient(top, #FFFFFF, #C6ECFF 1px, #FFFFFF);
 }
 #show-details{
     display: none;
-
+}
 #about {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     background-color: bisque;
@@ -80,3 +81,8 @@ h1{
     font-family: 'Bree Serif', serif;
 
 }
+/* #mapsrr{
+    padding: 100px;
+    height: 50px;
+    width: 50px;
+} */

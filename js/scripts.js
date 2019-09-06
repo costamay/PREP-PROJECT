@@ -1,22 +1,17 @@
 $(document).ready(function(){
-    $("form#codec1").submit(function(event){
-        event.preventDefault();
-        var servicesInput = $("#select1 option:selected").value
-       
-        
-        var vehicleInput = $("#select2 option:selected").value
-        
-        var firstNameInput = $("#first-name").value
-        
-        var secondNameInput = $("#second-name").value
-        
-        var emailInput = $("#email").value
-        
-        var phoneInput = $("#phone").value
+  $("form#codec1").submit(function(event){
+    event.preventDefault()
+      var servicesInput = $("#select1 option:selected").value
+      var vehicleInput = $("#select2 option:selected").value 
+      var firstNameInput = $("#first-name").value 
+      var secondNameInput = $("#second-name").value
+      var emailInput = $("#email").value
+      var phoneInput = $("#phone").value
 
-            
-     
-    })
+      if(firstNameInput.length > 1 || secondNameInput.length > 1 || emailInput.lenth> 1 || phoneInput.length > 8){
+        alert("Your request have been received, thank you!")
+      }     
+  })
 })
 //user interface logic
 $(document).ready(function(){

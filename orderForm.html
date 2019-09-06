@@ -19,35 +19,28 @@
         <div class="collapse navbar-collapse justify-content-center" id="navbarLinks">
             <ul class="navbar-nav">
                 <li class="nav-item active">
-                    <a href="#" class="nav-link">HOME</a>
+                    <a href="index.html" class="nav-link" >HOME</a>
                 </li>
-                <li class="nav-item">
-                            <a href="about" class="nav-link">ABOUT US</a>
+                    <a href="#" class="nav-link">BOOK NOW</a>
                 </li>
-                <li class="nav-item">
-                <a href="services" class="nav-link ">OUR SERVICES</a>
-                           
-                </li>
-                <li class="nav-item">
-                    <a href="book" class="nav-link">BOOK NOW</a>
-                </li>
-                <li class="nav-item">
-                    <a href="contact" class="nav-link">CONTACT US</a>
-                </li>
+            </li>
+            <a href="#contact" class="nav-link">CONTACT US</a>
+        </li>
                         
             </ul>
         </div>
     </div>
+    <section id="move">
     <div class="container">
         <div class="form-details">
         <h2 class="quotation">Request A Quotation:</h2>
-            <form id="codec1">
+            <form id="codec1" action="https://formspree.io/branco.cyprian@gmail.com" method="POST">
                 <div class="section-form" >
                     <div class="row">
                         <div class="col-md-4">
                             <div class="form-column">
                                 <div class="header1">Select Type of Service:</div>
-                                <select name="menu-55" value size="1" class="form-control" id="select1">
+                                <select name="name" value size="1" class="form-control" id="select1">
                                     <option value="Select Service" ></option>
                                     <option value="house-moving">House Moving</option>
                                     <option value="Office Moving">Office Moving</option>
@@ -61,7 +54,7 @@
                         <div class="col-md-4">
                             <div class="form-column">
                                 <div class="header1">Select Type of Vehicle:</div>
-                                <select name="menu-55" id="vehicle" value size="1" class="form-control" id="select2">
+                                <select name="name" id="vehicle" value size="1" class="form-control" id="select2">
                                     <option value="Select Vehicle"></option>
                                     <option value="PickupTruck">Pickup Truck</option>
                                     <option value="medium-truck">Medium Size Truck</option>
@@ -74,12 +67,12 @@
                     <div class="row text-center">
                         <div class="col-md-4">
                             <div class="form-column">
-                                <input type="text" name="first-name" id="first-name" value size="40" class="form-control" placeholder="First Name">
+                                <input type="text" name="name" id="first-name" value size="40" class="form-control" placeholder="First Name">
                             </div>        
                         </div>
                         <div class="col-md=4">
                             <div class="form-column">
-                                <input type="text" name="second-name" id="second-name" value size="40" class="form-control" placeholder="Second Name">
+                                <input type="text" name="name" id="second-name" value size="40" class="form-control" placeholder="Second Name">
                             </div>
                         </div>
                     </div>
@@ -87,7 +80,7 @@
                     <div class="row">
                         <div class="col-md-4">
                             <div class="form-column">
-                                <input type="text" name="email" id="email" value size="40" class="form-control" placeholder="Email">
+                                <input type="text" name="name" id="email" value size="40" class="form-control" placeholder="Email">
                             </div>
                         </div>
                     </div>
@@ -104,7 +97,7 @@
                         <div class="col-md-4">
                             <div class="form-column">
                                 <div class="header1" id="floating-panel">Location:From</div>
-                                <select name="menu-55" id="start" value size="1" class="form-control" id="from_loc">
+                                <select name="name" id="start" value size="1" class="form-control" id="from_loc">
                                     <option value="Select Location">Select Location</option>
                                     <option value="Bazaar plaza, NBI">Bazaar Plaza</option>
                                     <option value="Stima Plza, NBI">Stima Plaza</option>
@@ -116,7 +109,7 @@
                         <div class="col-md-4">
                             <div class="form-column">
                                 <div class="header1">Location:To</div>
-                                <select name="menu-55" id="end" value size="1" class="form-control" id="to_loc">
+                                <select name="name" id="end" value size="1" class="form-control" id="to_loc">
                                     <option value="Select Location">Select Location</option>
                                     <option value="Bazaar plaza, NBI">Bazaar Plaza</option>
                                     <option value="Stima Plza, NBI">Stima Plaza</option>
@@ -134,7 +127,7 @@
                     <div class="row">
                         <div class="col-md-8">
                             <div class="form-column">
-                                <textarea id="textArea" class="form-control" name="extra-info" id="extra-info" cols="100" rows="5" placeholder="Additional information"></textarea>
+                                <textarea id="textArea" class="form-control" name="name" type="text" id="extra-info" cols="100" rows="5" placeholder="Additional information"></textarea>
                             </div>
                         </div>
                     </div>
@@ -171,6 +164,7 @@
             </div>
         </div>
     </div>
+    </section>
     <section id="contact">
         <div class="container">
             <div class="row">
@@ -217,12 +211,19 @@
     <script src="js/jquery-3.4.1.js"></script>
     <script src="js/bootstrap.bundle.js"></script>
     <script src="js/scripts.js"></script>
-    <script src="js/form.js"></script>
-    <script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBFabpF-rmUAiqDn3-yGFmI60XthqLBznc&callback=initMap">
-    </script>
-    <script src="js/map.js"></script>
-    
+    <script src="js/three.r92.min.js"></script>
+<script src="js/vanta.birds.min.js"></script>
+<script>
+VANTA.BIRDS({
+  el: "#move",
+  backgroundColor: 0x2d2320,
+  birdSize: 0.9,
+  speedLimit: 3.00,
+  separation: 33.00,
+  alignment: 57.00,
+  cohesion: 63.00
+})
+</script> 
     
 </body>
 </html

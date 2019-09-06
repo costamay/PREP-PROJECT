@@ -21,16 +21,16 @@
                 <li class="nav-item active">
                     <a href="index.html" class="nav-link" >HOME</a>
                 </li>
-                <li class="nav-item">
-                    <a href="orderForm.html" class="nav-link">BOOK NOW</a>
+                    <a href="#" class="nav-link">BOOK NOW</a>
                 </li>
-                <li class="nav-item">
-                    <a href="contact" class="nav-link" id="contact">CONTACT US</a>
-                </li>
+            </li>
+            <a href="#contact" class="nav-link">CONTACT US</a>
+        </li>
                         
             </ul>
         </div>
     </div>
+    <section id="move">
     <div class="container">
         <div class="form-details">
         <h2 class="quotation">Request A Quotation:</h2>
@@ -164,6 +164,7 @@
             </div>
         </div>
     </div>
+    </section>
     <section id="contact">
         <div class="container">
             <div class="row">
@@ -210,6 +211,7 @@
     <script src="js/jquery-3.4.1.js"></script>
     <script src="js/bootstrap.bundle.js"></script>
     <script src="js/scripts.js"></script>
+
     <script src="three.r92.min.js"></script>
     <script src="vanta.birds.min.js"></script>
     <script>
@@ -223,6 +225,21 @@
     cohesion: 63.00
     })
 </script>
+
+    <script src="js/three.r92.min.js"></script>
+<script src="js/vanta.birds.min.js"></script>
+<script>
+VANTA.BIRDS({
+  el: "#move",
+  backgroundColor: 0x2d2320,
+  birdSize: 0.9,
+  speedLimit: 3.00,
+  separation: 33.00,
+  alignment: 57.00,
+  cohesion: 63.00
+})
+</script> 
+
     
 </body>
 </html

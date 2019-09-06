@@ -1,6 +1,4 @@
 
-.carousel-item img {
-
 .carousel-caption{
     text-align: center;
     font-family: sans-serif;
@@ -29,7 +27,7 @@
     font-size: 20px;
     margin-right: 15px;
 }
-p{
+.carousel-caption p{
     color: #000;
     text-align: right;
     font-size: 20px;
@@ -171,7 +169,7 @@ body{
     color: white;
 
 }
-.form-details{
+form-details{
     text-align: center;
     background-color: grey;
     padding: 120px;
@@ -245,12 +243,11 @@ h2 {
 h1{
     font-family: 'Bree Serif', serif;
 
-<<<<<<< HEAD
+
+
 }
 /* #maps{
     padding: 100px;
     height: 50px;
     width: 50px;
 } */
-=======
->>>>>>> 35513495bf28363cae43355d8d09c1346ebfb668

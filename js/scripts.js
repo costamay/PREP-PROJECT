@@ -13,24 +13,15 @@ Quotation.prototype.listItems = function(){
 }
 
 $(document).ready(function(){
-    $("form#codec1").submit(function(event){
-        event.preventDefault();
-        var servicesInput = $("#select1 option:selected").value
-       
-        
-        var vehicleInput = $("#select2 option:selected").value
-        
-        var firstNameInput = $("#first-name").value
-        
-        var secondNameInput = $("#second-name").value
-        
-        var emailInput = $("#email").value
-        
-        var phoneInput = $("#phone").value
+  $("form#codec1").submit(function(event){
+    event.preventDefault()
+      var servicesInput = $("#select1 option:selected").value
+      var vehicleInput = $("#select2 option:selected").value 
+      var firstNameInput = $("#first-name").value 
+      var secondNameInput = $("#second-name").value
+      var emailInput = $("#email").value
+      var phoneInput = $("#phone").value
 
-            
-     
-    })
 
 })
 
@@ -103,7 +94,5 @@ $(document).ready(function(){
 
     
 });
-
+})
     
-
-

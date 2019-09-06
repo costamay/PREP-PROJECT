@@ -35,13 +35,13 @@
     <div class="container">
         <div class="form-details">
         <h2 class="quotation">Request A Quotation:</h2>
-            <form id="codec1" action="https://formspree.io/branco.cyprian@gmail.com" method="POST">
+            <form action="https://formspree.io/branco.cyprian@gmail.com" method="POST" id="codec1">
                 <div class="section-form" >
                     <div class="row">
                         <div class="col-md-4">
                             <div class="form-column">
                                 <div class="header1">Select Type of Service:</div>
-                                <select name="name" value size="1" class="form-control" id="select1">
+                                <select name="name" value size="1" class="form-control" id="select1" required>
                                     <option value="Select Service" ></option>
                                     <option value="house-moving">House Moving</option>
                                     <option value="Office Moving">Office Moving</option>
@@ -68,12 +68,12 @@
                     <div class="row text-center">
                         <div class="col-md-4">
                             <div class="form-column">
-                                <input type="text" name="name" id="first-name" value size="40" class="form-control" placeholder="First Name">
+                                <input type="text" name="name" id="first-name" value size="40" class="form-control" placeholder="First Name" required>
                             </div>        
                         </div>
                         <div class="col-md=4">
                             <div class="form-column">
-                                <input type="text" name="name" id="second-name" value size="40" class="form-control" placeholder="Second Name">
+                                <input type="text" name="name" id="second-name" value size="40" class="form-control" placeholder="Second Name" required>
                             </div>
                         </div>
                     </div>
@@ -81,7 +81,7 @@
                     <div class="row">
                         <div class="col-md-4">
                             <div class="form-column">
-                                <input type="text" name="name" id="email" value size="40" class="form-control" placeholder="Email">
+                                <input type="text" name="name" id="email" value size="40" class="form-control" placeholder="Email" required>
                             </div>
                         </div>
                     </div>
@@ -89,7 +89,7 @@
                     <div class="row"> 
                         <div class="col-md-4">
                             <div class="form-column">
-                                <input type="number" name="phone" id="phone" value size="40" class="form-control" placeholder="Phone">
+                                <input type="number" name="phone" id="phone" value size="40" class="form-control" placeholder="Phone" required>
                             </div>
                         </div>
                     </div>
@@ -211,7 +211,26 @@
     </section>
     <script src="js/jquery-3.4.1.js"></script>
     <script src="js/bootstrap.bundle.js"></script>
+<<<<<<< HEAD
    
+=======
+    <script src="js/scripts.js"></script>
+
+    <script src="three.r92.min.js"></script>
+    <script src="vanta.birds.min.js"></script>
+    <script>
+    VANTA.BIRDS({
+    el: "body",
+    backgroundColor: 0xdfecfc,
+    birdSize: 1.50,
+    speedLimit: 3.00,
+    separation: 33.00,
+    alignment: 57.00,
+    cohesion: 63.00
+    })
+</script>
+
+>>>>>>> a994a8c0696975c59c75eccb7888b3cc7b8c0048
     <script src="js/three.r92.min.js"></script>
 <script src="js/vanta.birds.min.js"></script>
 <script>
@@ -225,6 +244,7 @@ VANTA.BIRDS({
   cohesion: 63.00
 })
 </script> 
+
     
 </body>
 </html
